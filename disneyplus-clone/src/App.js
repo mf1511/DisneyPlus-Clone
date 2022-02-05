@@ -11,6 +11,7 @@ import {
   Link,
 } from "react-router-dom";
 import Detail from "./components/detail/Detail";
+import Login from "./components/login/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          <Route path="/login" excat component={Login} />
           <Route path="/" exact component={Home} />
           <Route path="/detail" exact component={Detail} />
         </Switch>
